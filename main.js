@@ -18,7 +18,7 @@ image(video,0,0,600,500);
 
 function setup(){
 canvas=createCanvas(600,500);
-canvas.position(1000,300);
+canvas.center();
 video=createCapture(VIDEO);
 video.hide();
 
@@ -28,9 +28,9 @@ poseNet.on("pose",gotPoses);
 
 
 function play(){
-song.play();
-song.rate(1);
-song.setVolume(1);
+song1.play();
+song1.rate(1);
+song1.setVolume(1);
 }
 
 function modelLoaded(){
